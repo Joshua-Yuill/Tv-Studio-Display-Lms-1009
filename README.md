@@ -13,6 +13,7 @@ Here comes the most time consuming part of this project. Figuring out just how t
 #### Parts list
 - Usb to RS-422/RS-485 [I used this one here](https://www.amazon.co.uk/DSD-TECH-SH-U11F-Industrial-Application-White/dp/B083XSG1RG)
 - RJ 11 Cable [I used this one here](https://www.amazon.co.uk/dp/B000MSPID4)
+
 (I can't gurentee that any other adapters or cables will or won't work, I just know these do.)
 #### Tools List
 - Side cutters
