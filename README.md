@@ -1,2 +1,2 @@
-# Lms-1009
-This repository documents my deep dive into understanding the LMS-1009 Tally Display from 1996 and how it can be used today.
+# 👋 Hi there! What even is this?
+So you might be wondering what this repository is about, especially if you found this through idle googling. This repository documents my deep dive into understanding the LMS-1009 Tally Display from 1996 and how it can be used today. I was browsing ebay and found one for sale (for cheap I might add) and I was fasinated on how it could be used, as its 2x 9 charecter display on the front has a real retro feel that I absolutley love. 
