@@ -27,7 +27,6 @@ Don't forget pull the cable through the case of the device first so the unit can
 
 ## 🤔It's electrifying! But what now?
 Here comes the most time consuming part of this project. Figuring out just how to communicate with the unit. From reading around on the limited documentation available I was able to understand that the device communicated over the RS-422/RS-485 protocol. So I did what any sane person would do, I went to amazon and typed in "Usb to RS-422/RS-485 Converter" and was kind of bewildered by the number of different options and variances that are available. This could be the part where I pretend like I knew what I was doing, but honestly I picked the one that looked the most versatile and was within my budget and waited for it to arrive.
-### How do I do this?
 #### Parts list
 - Usb to RS-422/RS-485 - [I used this one here](https://www.amazon.co.uk/DSD-TECH-SH-U11F-Industrial-Application-White/dp/B083XSG1RG)
 - RJ 11 Cable - [I used this one here](https://www.amazon.co.uk/dp/B000MSPID4)
@@ -36,4 +35,4 @@ Here comes the most time consuming part of this project. Figuring out just how t
 #### Tools List
 - Side cutters
 ### The Process
-First things first was to work out how to connect the display to the RS-422/RS-485 adapter. After some trial and error I managed to 
+First things first was to work out how to connect the display to the RS-422/RS-485 adapter. Firstly I cut the RJ45 end off the cable leaving me with just the RJ11 plug and about 20cm of wire. I stripped back the outer insulation to reveal 4 wires inside. Brown, white, green and yellow. I stripped back the ends of those cables to reveal the bare copper ready for it to be attached to the converter. After some trial and error I managed to figure out the wiring pin-out to connect the RJ11 plug to the converter. 
