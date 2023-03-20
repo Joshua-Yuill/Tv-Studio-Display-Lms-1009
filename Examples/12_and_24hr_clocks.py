@@ -20,6 +20,7 @@ conn.write("<ID01><M2>\r\n".encode("ascii")) # Setting display ID 1 to 24hr time
 time.sleep(delay)
 conn.write("<ID02><M1>\r\n".encode("ascii")) # Setting display ID 1 to 12hr time format
 time.sleep(delay)
+
 now = datetime.now() # Getting the date and time now
 current_time = now.strftime("%H%M%S") # Adjusting to the format that the LMS-1009 Understands
 conn.write("<T{}>\r\n".format(current_time).encode("ascii")) # Updating the internal clock to the current time
