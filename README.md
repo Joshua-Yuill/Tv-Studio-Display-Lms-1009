@@ -14,6 +14,7 @@ The first task on receiving the unit was figuring out how to power it as mine di
 - Multimeter _(Optional)_
 
 The display takes 9-12v 4a AC or DC. I decided that the easiest way to get power to the display would be to solder directly to the port connector on the PCB.
+
 <img src="https://cdn.discordapp.com/attachments/816645352215150602/1087513696546324480/IMG_20230320_224318.jpg"
      alt="Cables soldered to PCB"
      width="400"/>
