@@ -5,7 +5,10 @@ from datetime import datetime
 
 API_KEY = "1c074bd08729417e8a860b56970af6ae"
 
-conn = serial.Serial("COM3", 9600)
+try:
+    conn = serial.Serial("COM3", 9600)
+except:
+    conn = ""
 
 delay = 0.7
 
@@ -21,9 +24,17 @@ def displaySetup():
     conn.write("<ID02><M1>\r\n".encode("ascii")) # Setting display ID 1 to 12hr time format
     time.sleep(delay)
 
+def nightMode():
+    conn.write("<ID01><L1><PA><TM>\r\n".encode("ascii"))
+    time.sleep(delay)
+    conn.write("<ID02><L1><PA><TM>\r\n".encode("ascii")) 
+    time.sleep(delay)
 
 def getNews():
-    response = r.get("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=" + API_KEY)
+    try:
+        response = r.get("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=" + API_KEY)
+    except:
+        response = ("Offline")
     return response.json()
 
 def getTime():
@@ -34,6 +45,11 @@ def getTime():
     except:
         current_time = datetime.now().strftime("%H%M%S")
         return current_time
+    
+def displayTime(time):
+    conn.write("<ID02><M2>\r\n".encode("ascii")) # Setting display ID 1 to 24hr time format
+    time.sleep(delay)
+    conn.write("<T{}>\r\n".format(time).encode("ascii"))
 
 Headlines = []
 NResponse = getNews()
@@ -41,5 +57,6 @@ for i in NResponse['articles']:
     Headlines.append(i['title'])
 
 
-print(Headlines)
+print(Headlines[2])
 print(getTime())
+print('\a')
